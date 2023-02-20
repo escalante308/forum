@@ -20,3 +20,19 @@ To start Forum, you can follow these steps:
 - Run the Docker Containers, using `docker-compose up -d`. This will take some minutes the first time you run the command.
 - After this, you can access to the app in your browser going to http://localhost
 - Once the Docker Containers are running, we can start making changes to the app. If you're using VSCode, run `code .` to start a VSCode window from the app directory. Then, using the Remote Connections plugin, you need to attach VSCode to a running container, pressing CTRL+SHIFT+P and writing "Attach to Running Container" and selecting the container that is running Laravel
+
+## Installing in server
+
+- Prerrequisites: 
+  - PHP 8.1+ and modules
+  - MySQL 8
+- Clone project in server
+- Create a new Database
+- Copy .env.example to .env and set Environment variables
+  - DB_DATABASE=<database name>
+  - DB_USERNAME=<mysql username>
+  - DB_PASSWORD=<mysql password>
+- Run `composer install`
+- Run `php artisan migrate:fresh --seed` To create the Database Structure and the required rows (1000 users - 10000 posts - at least 5 responses per post)
+- Run `php artisan key:generate` to add the Env Key
+- Depending on the server configuration, you need to run `chmod -R 777 /var/www/html/storage/logs` so the application can create Log files 
