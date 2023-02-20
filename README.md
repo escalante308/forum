@@ -29,9 +29,9 @@ To start Forum, you can follow these steps:
 - Clone project in server
 - Create a new Database
 - Copy .env.example to .env and set Environment variables
-  - DB_DATABASE=<database name>
-  - DB_USERNAME=<mysql username>
-  - DB_PASSWORD=<mysql password>
+  - DB_DATABASE=`database name`
+  - DB_USERNAME=`mysql username`
+  - DB_PASSWORD=`mysql password`
 - Run `composer install`
 - Run `php artisan migrate:fresh --seed` To create the Database Structure and the required rows (1000 users - 10000 posts - at least 5 responses per post)
 - Run `php artisan key:generate` to add the Env Key
