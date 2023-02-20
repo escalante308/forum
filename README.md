@@ -21,6 +21,10 @@ To start Forum, you can follow these steps:
 - After this, you can access to the app in your browser going to http://localhost
 - Once the Docker Containers are running, we can start making changes to the app. If you're using VSCode, run `code .` to start a VSCode window from the app directory. Then, using the Remote Connections plugin, you need to attach VSCode to a running container, pressing CTRL+SHIFT+P and writing "Attach to Running Container" and selecting the container that is running Laravel
 
+## Live Demo
+
+http://164.90.223.168/
+
 ## Installing in server
 
 - Prerrequisites: 
