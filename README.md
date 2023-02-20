@@ -14,7 +14,7 @@ posts and responses for authenticated users. Forum was built using PHP and Larav
 
 To start Forum, you can follow these steps:
 
-- Clone this project in your local environment, running `git clone git@github.com:escalante308/forum.git`
+- Clone this project in your local environment, running `git clone https://github.com/escalante308/forum`
 - Go inside the Forum directory, using `cd forum`.
 - Create the .env file using the .env.example file, using `cp .env.example .env`. Then, open the file and set the "DB_PASSWORD" variable to "password"
 - Run the Docker Containers, using `docker-compose up -d`. This will take some minutes the first time you run the command.
