@@ -1,0 +1,10 @@
+.initial {
+    height: 32px;
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+    font-weight: bold;
+    font-size: 14px;
+}
